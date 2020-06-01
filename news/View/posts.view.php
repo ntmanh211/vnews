@@ -2,3 +2,7 @@
 <?php getTemplate("header", $viewParams); ?>
 <body>
 <?php getTemplate("topbar"); ?>
+
+<!-- code -->
+
+<?php getTemplate("footer"); ?>

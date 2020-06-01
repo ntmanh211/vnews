@@ -11,7 +11,7 @@ class ViewController extends Controller{
         //     getView("login", array('title' => 'Xác thực chỗ trống phòng Lab - Login'));
         // }
         // else{
-            getView("home", array('title' => 'Xác thực chỗ trống phòng Lab'));
+            getView("home", array('title' => 'VNews'));
         // }
     }
 
