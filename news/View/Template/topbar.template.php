@@ -32,7 +32,7 @@
       </div>
       <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="header_bottom">
-          <div class="logo_area"><a href="index.html" class="logo"><img src="assets/css/images/logo.jpg" alt=""></a></div>
+          <div class="logo_area"><a href="index.html" class="logo"><img src="assets/css/images/logo1.jpg" alt=""></a></div>
           
         </div>
       </div>
