@@ -5,35 +5,46 @@
 <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
 <div class="container">
   <header id="header">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="header_top">
-          <div class="header_top_left">
-            <ul class="top_nav">
-              <p>Friday, December 05, 2045</p>
-            </ul>
-          </div>
-          <div class="header_search bm-search">
-            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-              <div class="input-group">
-                <input type="text" class="form-control bg-light border-0 small" placeholder="Stìm kiếm..." aria-label="Search" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary" type="button">
-                    <i class="fas fa-search fa-sm"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="header_top_right">
-            
+    <div class="container">
+      <div class="logo"><img src="assets/css/images/logo1.jpg" alt=""></div>
+      <div class="header__search bm-search">
+        <input type="text" class="text-search" placeholder="Nhập nội dung tìm kiếm">
+        <button style="height: 36px; width: 36px;">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div class="header__user">
+        <div class="login show open">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background: #fff;">
+              <ul>
+                <li class="signup">
+                  <a href="#" class="dropdown-item"> <span>Đăng ký</span></a>
+                </li>
+                <li class="login">
+                  <a href="#" class="dropdown-item"> <span>Đăng nhập</span></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="header_bottom">
-          <div class="logo_area"><a href="index.html" class="logo"><img src="assets/css/images/logo1.jpg" alt=""></a></div>
-          
+        <div class="logged user hidden">
+          <a href="#" class="uName thumb" id = "dropdownMenuButton-2" data-toggle = "dropdown" aria-haspopup ="true" aria-explanded = "false">
+            <span class="text"> </span>
+          </a>
+          <div class="user-board bm-dropdown-menu user-board dropdown-menu" aria-labelledby = "dropdownMenuButton-2">
+            <ul>
+              <li class="infomation">
+                <a href="#"><span>Thông tin cá nhân</span></a>
+              </li>
+              <li class="logout">
+                <a href="#"><span>Đăng xuất</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -86,20 +97,20 @@
 
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Bạn muốn đăng xuất?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">×</span>
-            </button>
-            </div>
-            <div class="modal-body">Bạn muốn đăng xuất?</div>
-            <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="?action=logoutact">Đăng xuất</a>
-            </div>
-            </div>
-    </div>
+      <div class="modal-dialog" role="document">
+              <div class="modal-content">
+              <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Bạn muốn đăng xuất?</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+              </button>
+              </div>
+              <div class="modal-body">Bạn muốn đăng xuất?</div>
+              <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+              <a class="btn btn-primary" href="?action=logoutact">Đăng xuất</a>
+              </div>
+              </div>
+      </div>
     </div>
 </nav>

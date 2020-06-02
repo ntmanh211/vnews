@@ -1,33 +1,29 @@
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Signal Processing Lab - HUST 2020</span>
+  <footer id="footer">
+    <div class="footer_top">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInRightBig">
+            <h2>Liên hệ</h2>
+            <p>Đại học Bách khoa Hà Nội</p>
+            <address>
+            Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội
+            </address>
           </div>
         </div>
-      </footer>
-      <!-- End of Footer -->
-
+      </div>
     </div>
-    <!-- End of Content Wrapper -->
-
-  </div>
-  <!-- End of Page Wrapper -->
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <!-- Bootstrap core JavaScript-->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-
-  <!-- Core plugin JavaScript-->
-  <!-- <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script> -->
-
-  <!-- Custom scripts for all pages-->
-  <!-- <script src="assets/js/sb-admin-2.min.js"></script> -->
-  <!-- <script src="assets/js/myscript.js"></script> -->
+    <!-- <div class="footer_bottom">
+      <p class="copyright">Copyright &copy; 2045 <a href="index.html">NewsFeed</a></p>
+      <p class="developer">Developed By Wpfreeware</p>
+    </div> -->
+  </footer>
+</div>
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/wow.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/slick.min.js"></script> 
+<script src="assets/js/jquery.li-scroller.1.0.js"></script> 
+<script src="assets/js/jquery.newsTicker.min.js"></script> 
+<script src="assets/js/jquery.fancybox.pack.js"></script> 
+<script src="assets/js/custom.js"></script>
 </body>
-</html>
