@@ -10,5 +10,9 @@
     $route->post("action", "load_status", "ActionController@loadStatus");
     $route->post("action", "load_history", "ActionController@loadInOutHistory");
     //*****
+
+    $route->get("link", "posts", "ViewController@getPosts");
+
+
     $route->process();
 ?>

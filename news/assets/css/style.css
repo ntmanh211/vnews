@@ -2054,3 +2054,25 @@ figure.effect-layla:hover img {
       width: 32.1%
     }
   }
+
+  /*========= Dat them vao ==========*/
+
+/*@media(min-width: 1199px){*/
+/*  section#post-detail {
+    float: left;
+    display: inline;
+    width: 100%;
+    background-color: #fff;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+
+  .post-detail-left {
+      position: relative;
+  }
+
+  .post-detail-left>img {
+      width: 100%;
+  }*/
+/*}*/
