@@ -18,5 +18,9 @@ class ViewController extends Controller{
     public function getRegister(){
         getView("register", array('title' => 'Đăng ký'));
     }
+
+    public function getPosts(){
+        getView("posts", array('title' => "Tin báo"));
+    }
 }
 ?>
