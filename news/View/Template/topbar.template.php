@@ -6,7 +6,7 @@
 <div class="container">
   <header id="header">
     <div class="container">
-      <div class="logo"><img src="assets/css/images/logo1.jpg" alt=""></div>
+      <div class="logo"><img src="assets/css/images/logo2.jpg" alt=""></div>
       <div class="header__search bm-search">
         <input type="text" class="text-search" placeholder="Nhập nội dung tìm kiếm">
         <button style="height: 36px; width: 36px;">
