@@ -246,6 +246,7 @@ R .btn-blue:hover {
   width: 100%;
   margin-top: 0px;
   height: 75px;
+  background-color: #fff;
 }
 #header .logo {
     position: absolute;
