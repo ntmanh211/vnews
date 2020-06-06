@@ -22,5 +22,9 @@ class ViewController extends Controller{
     public function getPosts(){
         getView("posts", array('title' => "Tin báo"));
     }
+
+    public function getSearch(){
+        getView("search", array('title' => "Duyệt tin"));
+    }
 }
 ?>

@@ -12,7 +12,7 @@
     //*****
 
     $route->get("link", "posts", "ViewController@getPosts");
-
+    $route->get("link", "browse", "ViewController@getSearch");
 
     $route->process();
 ?>
