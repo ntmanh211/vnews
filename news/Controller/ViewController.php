@@ -23,7 +23,6 @@ class ViewController extends Controller{
         getView("posts", array('title' => "Tin báo"));
     }
 
-<<<<<<< HEAD
     public function getLogin(){
         getView("login", array('title' => 'Đăng nhập'));
     }
@@ -32,10 +31,8 @@ class ViewController extends Controller{
         getView("forgot_pass", array('title' => 'Quên mật khẩu'));
     }
 
-=======
     public function getSearch(){
         getView("search", array('title' => "Duyệt tin"));
     }
->>>>>>> 63c59e168f4e1725ba52d75615680ed92c0c4691
 }
 ?>

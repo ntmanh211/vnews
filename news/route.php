@@ -13,13 +13,10 @@
     //*****
 
     $route->get("link", "posts", "ViewController@getPosts");
-<<<<<<< HEAD
 
     $route->get("link", "forgot_pass", "ViewController@forgot_pass");
 
-=======
     $route->get("link", "browse", "ViewController@getSearch");
->>>>>>> 63c59e168f4e1725ba52d75615680ed92c0c4691
 
     $route->process();
 ?>
