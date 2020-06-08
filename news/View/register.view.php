@@ -51,9 +51,9 @@
                     <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" name="password1" placeholder="Nhập lại mật khẩu">
                   </div>
                 </div>
-                <a href="?link=login" class="btn btn-primary btn-user btn-block">
+                <button type="submit" class="btn btn-primary btn-user btn-block">
                   Đăng ký
-                </a>
+                </button>
               </form>
               <div class="text-center">
                 <a class="small" href="?link=login">Bạn đã có tài khoản? Đăng nhập</a>
