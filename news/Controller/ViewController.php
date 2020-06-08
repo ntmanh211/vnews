@@ -22,5 +22,14 @@ class ViewController extends Controller{
     public function getPosts(){
         getView("posts", array('title' => "Tin báo"));
     }
+
+    public function getLogin(){
+        getView("login", array('title' => 'Đăng nhập'));
+    }
+
+    public function getForgotPass(){
+        getView("forgot_pass", array('title' => 'Quên mật khẩu'));
+    }
+
 }
 ?>

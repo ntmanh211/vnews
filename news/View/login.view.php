@@ -1,8 +1,8 @@
 <?php if(!defined('__CONTROLLER__')) return; ?>
 <?php getTemplate("header", $viewParams); ?>
-<body class="bg-gradient-primary">
+<body style="margin-top: 25px;">
 
-  <div class="container">
+  <div class="container" style="width: 555px;">
 
     <!-- Outer Row -->
     <div class="row justify-content-center">
@@ -28,7 +28,7 @@
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
                         <input type="checkbox" class="custom-control-input" id="customCheck">
-                        <label class="custom-control-label" for="customCheck">Remember Me</label>
+                        <label class="custom-control-label" for="customCheck">Nhớ mật khẩu</label>
                       </div>
                     </div>
                     <a href="index.html" class="btn btn-primary btn-user btn-block">
@@ -36,10 +36,10 @@
                     </a>
                   </form>
                   <div class="text-center">
-                    <a class="small" href="forgot-password.html">Quên mật khẩu?</a>
+                    <a class="small" href="?link=forgot_pass">Quên mật khẩu?</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="register.html">Đăng ký tài khoản</a>
+                    <a class="small" href="?link=register">Đăng ký tài khoản</a>
                   </div>
                 </div>
               </div>

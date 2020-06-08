@@ -9,25 +9,34 @@ class Account extends DB{
 
     public function register($regData){
         // $this->insert("account", array())
+        if(isset($_POST["account"])){
+            $email = $_POST["email"];
+            $password = $_POST["password"];
+            $password1 = $_POST["password1"];
+            $name = $_POST["name"];
+            $birthday = $_POST["birthday"];
+            $gender = $_POST["gender"];
+            $care = $_POST["care"];
+        }
     }
 
-    public function login($username, $password){
+    public function login($email, $password){
         sessionInit();
-        $_SESSION['sl_user'] = $username;
+        $_SESSION['sl_email'] = $email;
         $_SESSION['sl_pass'] = $password; // hashed password
     }
 
     public function checkLoggedIn(){
         sessionInit();
-        if(!isset($_SESSION['sl_user']) || !isset($_SESSION['sl_pass'])) return false;
-        $check = $this->select("account", "*", "username='{$_SESSION['sl_user']}' AND password='{$_SESSION['sl_pass']}'");
+        if(!isset($_SESSION['email']) || !isset($_SESSION['sl_pass'])) return false;
+        $check = $this->select("account", "*", "username='{$_SESSION['sl_email']}' AND password='{$_SESSION['sl_pass']}'");
         if(count($check) == 1) return true;
         else return false;
     }
 
     public function logout(){
         sessionInit();
-        unset($_SESSION['sl_user']);
+        unset($_SESSION['sl_email']);
         unset($_SESSION['sl_pass']);
     }
 

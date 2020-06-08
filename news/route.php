@@ -4,7 +4,8 @@
     $route->get("link", "register", "ViewController@getRegister");
     $route->post("action", "register", "ActionController@registerAction");
     //*****
-    $route->post("action", "loginact", "ActionController@login");
+    $route->get("link", "login", "ViewController@getLogin");
+    // $route->post("action", "loginact", "ActionController@login");
     $route->get("action", "logoutact", "ActionController@logout");
 
     $route->post("action", "load_status", "ActionController@loadStatus");
@@ -12,6 +13,8 @@
     //*****
 
     $route->get("link", "posts", "ViewController@getPosts");
+
+    $route->get("link", "forgot_pass", "ViewController@forgot_pass");
 
 
     $route->process();
