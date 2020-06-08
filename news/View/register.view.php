@@ -28,20 +28,37 @@
                   <input type="birthday" class="form-control form-control-user" id="exampleInputBirthday" name="birthday" placeholder="Ngày sinh">
                 </div>
                 <div class="form-group">
-                  <input type="gender" class="form-control form-control-user" id="exampleInputGender" name="gender" placeholder="Giới tính">
+                    <label>Giới tính:</label>
+                    <label class="gender">Nam
+                        <input type="radio" checked="checked" name="gender">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="gender">Nữ
+                        <input type="radio" name="gender">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
                 <div class="form-group">
-                  <label>Quan tâm</label>
+                  <label>Quan tâm:</label>
                   <!-- <input type="care" class="form-control form-control-user" id="exampleInputCare" placeholder="Quan tâm"> -->
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="care[]" value="1">Option 1</label>
+                  
+                <div class="row">
+                  
+                  <div class="category col-lg-6">
+                    <label><input type="checkbox" name="care[]" value="1">Chính trị - Xã hội</label>
+                    <label><input type="checkbox" name="care[]" value="1">Đời sống</label>
+                    <label><input type="checkbox" name="care[]" value="1">Giáo dục</label>
+                    <label><input type="checkbox" name="care[]" value="1">Kinh doanh</label>
+                    <label><input type="checkbox" name="care[]" value="1">Khoa học công nghệ</label>
                   </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="care[]" value="2">Option 2</label>
+                  <div class="category col-lg-6">
+                    <label><input type="checkbox" name="care[]" value="1">Pháp luật</label>
+                    <label><input type="checkbox" name="care[]" value="1">Sức khỏe</label>
+                    <label><input type="checkbox" name="care[]" value="1">Thể thao</label>
+                    <label><input type="checkbox" name="care[]" value="1">Văn hóa</label>
+                    <label><input type="checkbox" name="care[]" value="1">Xe cộ</label>
                   </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" name="care[]" value="3">Option 3</label>
-                  </div>
+                  
                 </div>
                 <div class="form-group row">
                   <div class="col-sm-6 mb-3 mb-sm-0">
