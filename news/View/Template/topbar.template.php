@@ -4,51 +4,59 @@
 </div>
 <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
 <div class="container">
-  <header id="header">
-    <div class="container">
-      <div class="logo"><img src="assets/css/images/logo2.jpg" alt=""></div>
-      <div class="header__search bm-search">
-        <input type="text" class="text-search" placeholder="Nhập nội dung tìm kiếm">
-        <button style="height: 36px; width: 36px;">
-          <i class="fas fa-search"></i>
-        </button>
-      </div>
-      <div class="header__user">
-        <div class="login show open">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-user"></i>
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background: #fff;">
+    <header id="header">
+      <div class="container">
+        <div class="logo"><img src="assets/css/images/logo2.jpg" alt=""></div>
+        <div class="header__search bm-search">
+          <input type="text" class="text-search" placeholder="Nhập nội dung tìm kiếm">
+          <button style="height: 36px; width: 36px;">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="header__user">
+          <div class="login show open">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background: #fff;">
+                <ul>
+                  <li class="signup">
+                    <a href="?link = register" class="dropdown-item"> <span>Đăng ký</span></a>
+                  </li>
+                  <li class="login">
+                    <a href="#" class="dropdown-item"> <span>Đăng nhập</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="logged user hidden">
+            <a href="#" class="uName thumb" id = "dropdownMenuButton-2" data-toggle = "dropdown" aria-haspopup ="true" aria-explanded = "false">
+              <span class="text"> </span>
+            </a>
+            <div class="user-board bm-dropdown-menu user-board dropdown-menu" aria-labelledby = "dropdownMenuButton-2">
               <ul>
+<<<<<<< HEAD
                 <li class="signup">
                   <a href="?link=register" class="dropdown-item"> <span>Đăng ký</span></a>
                 </li>
                 <li class="login">
                   <a href="?link=login" class="dropdown-item"> <span>Đăng nhập</span></a>
+=======
+                <li class="infomation">
+                  <a href="#"><span>Thông tin cá nhân</span></a>
+                </li>
+                <li class="logout">
+                  <a href="#"><span>Đăng xuất</span></a>
+>>>>>>> 63c59e168f4e1725ba52d75615680ed92c0c4691
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="logged user hidden">
-          <a href="#" class="uName thumb" id = "dropdownMenuButton-2" data-toggle = "dropdown" aria-haspopup ="true" aria-explanded = "false">
-            <span class="text"> </span>
-          </a>
-          <div class="user-board bm-dropdown-menu user-board dropdown-menu" aria-labelledby = "dropdownMenuButton-2">
-            <ul>
-              <li class="infomation">
-                <a href="#"><span>Thông tin cá nhân</span></a>
-              </li>
-              <li class="logout">
-                <a href="#"><span>Đăng xuất</span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
-    </div>
-  </header>
+    </header>
   <section id="navArea">
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
