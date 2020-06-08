@@ -22,7 +22,7 @@
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background: #fff;">
                 <ul>
                   <li class="signup">
-                    <a href="?link = register" class="dropdown-item"> <span>Đăng ký</span></a>
+                    <a href="?link=register" class="dropdown-item"> <span>Đăng ký</span></a>
                   </li>
                   <li class="login">
                     <a href="#" class="dropdown-item"> <span>Đăng nhập</span></a>
