@@ -19,6 +19,43 @@ ul {
   list-style: none
 }
 
+ul.meta.bar {
+    margin: 0px;
+    padding-left: 10px;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+}
+
+.meta.bar li {
+    display: inline-block;
+    color: #777777;
+    margin-right: 10px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.meta.bar li a {
+    color: #fff;
+}
+
+/*dat them*/
+.form-group .gender{
+  margin-left: 20px;
+}
+
+.category{
+  margin-bottom: 20px;
+}
+.category>label{
+  width: 100%;
+  margin-left: 30px;
+}
+
+.category label input{
+  margin-right: 5px;
+}
+
+/*======*/
+
 a {
   text-decoration: none;
   color: #2f2f2f
@@ -683,18 +720,29 @@ R .btn-blue:hover {
   padding: 10px 15px
 }
 
+.slider_article>h2{
+  margin-bottom: 0;
+}
+
 .slider_article>h2 a {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
   color: #fff;
   font-size: 18px;
-  padding: 10px;
-  display: inline-block
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  min-width:100%;
 }
 
 .slider_article>p {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
   color: #fff;
-  padding: 3px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 5px;
   display: inline-block
 }
 
@@ -2056,6 +2104,8 @@ figure.effect-layla:hover img {
   }
 
   /*========= Dat them vao ==========*/
+
+
 
 /*@media(min-width: 1199px){*/
 /*  section#post-detail {

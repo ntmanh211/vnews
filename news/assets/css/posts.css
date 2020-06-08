@@ -65,11 +65,11 @@ section#browse-news {
     /* align-items: center; */
 }
 
-ul.meta {
+ul.meta.browse {
     margin: 10px 0px;
 }
 
-.meta li {
+.meta.browse li {
     display: inline-block;
     color: #777777;
     margin-right: 10px;
@@ -77,14 +77,8 @@ ul.meta {
     font-size: 12px;
 }
 
-.meta li a {
+.meta.browse li a {
     color: #000;
-}
-
-.meta li a span.lnr {
-    color: #000;
-    margin-right: 5px;
-    font-weight: 700;
 }
 
 .button-refresh-area {
