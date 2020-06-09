@@ -11,7 +11,8 @@ class ViewController extends Controller{
         //     getView("login", array('title' => 'Xác thực chỗ trống phòng Lab - Login'));
         // }
         // else{
-            getView("home", array('title' => 'VNews'));
+            getView("home", array('title' => 'VNews',
+                                    'loggedIn' => $this->accObj->checkLoggedIn()));
         // }
     }
 

@@ -504,7 +504,7 @@ R .btn-blue:hover {
 }
 
 .dropdown-menu {
-  background-color: #222
+  background-color: #fff;
 }
 
 .dropdown-menu>li>a {

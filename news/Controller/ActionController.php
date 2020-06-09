@@ -7,12 +7,11 @@ class ActionController extends Controller{
     }
 
     public function registerAction($regData){
-        $this->accObj->register(array('username' => $regData['username'],
-                                        'password' => $regData['password']));
+        $this->accObj->register($regData);
     }
 
     public function login($loginData){
-        $this->accObj->login($loginData['sl_username'], _hash($loginData['sl_password']));
+        $this->accObj->login($loginData['email'], _hash($loginData['pass']));
         nextpage("./.");
     }
     public function logout(){

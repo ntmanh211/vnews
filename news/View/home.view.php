@@ -1,7 +1,7 @@
 <?php if(!defined('__CONTROLLER__')) return; ?>
 <?php getTemplate("header", $viewParams); ?>
 <body>
-<?php getTemplate("topbar"); ?>
+<?php getTemplate("topbar", $viewParams); ?>
   </section>
   <section id="sliderSection">
     <div class="row">

@@ -5,7 +5,7 @@
     $route->post("action", "register", "ActionController@registerAction");
     //*****
     $route->get("link", "login", "ViewController@getLogin");
-    // $route->post("action", "loginact", "ActionController@login");
+    $route->post("action", "loginact", "ActionController@login");
     $route->get("action", "logoutact", "ActionController@logout");
 
     $route->post("action", "load_status", "ActionController@loadStatus");
