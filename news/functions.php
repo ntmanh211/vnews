@@ -45,6 +45,14 @@ function randString($length){
     return $str;
 }
 
+function randInt($length){
+    $chars="0123456789";
+    $str="";
+    for($i = 0; $i < $length; $i++)
+        $str .= $chars[rand(0,9)];
+    return $str;
+}
+
 function getCurDate(){
     setTimeZone();
     return date("Y-m-d");

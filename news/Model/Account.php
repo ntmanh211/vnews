@@ -8,7 +8,7 @@ class Account extends DB{
     }
 
     private function genID(){
-        $id = randString(20);
+        $id = randInt(20);
         while(true){
             $query = $this->select("account", "acc_id", "acc_id='$id'");
             if(count($query) == 0) break;
