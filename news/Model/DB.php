@@ -63,7 +63,7 @@ class DB{
         mysqli_query($this->getConnect(), $cmd);
     }
 
-	public function update($table, $data, $cond = "1"){
+	public function update($table, $data, $cond){
         $cmd = "UPDATE $table SET ";
         $params = "";
         foreach(array_keys($data) as $key){

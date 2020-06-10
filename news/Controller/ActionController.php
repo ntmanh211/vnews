@@ -18,5 +18,10 @@ class ActionController extends Controller{
         $this->accObj->logout();
         nextpage("./.");
     }
+
+    public function UpdateUserInfo($uid){
+        $this->accObj->UpdateUserInfo($uid);
+        nextpage("./.");
+    }
 }
 ?>

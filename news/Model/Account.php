@@ -9,12 +9,13 @@ class Account extends DB{
 
     private function genID(){
         $id = randInt(20);
+        $email = $_SESSION['email'];
         while(true){
-            $query = $this->select("account", "acc_id", "acc_id='$id'");
+            $query = $this->select("account", "email", "email='$email'");
             if(count($query) == 0) break;
             else $id = randString(20);
         }
-        return $id;
+        return $query;
     }
     
     public function register($regData){
@@ -93,8 +94,25 @@ class Account extends DB{
         unset($_SESSION['pass']);
     }
 
-    public function getUserInfo($uid){
-        //.
+    public function UpdateUserInfo($uid){
+        $name = $uid['name'];
+        $email = $uid['email'];
+        $birthday = $uid['birthday'];
+        $gender = $uid['gender'];
+        $email1=$_SESSION['email'];
+        try {
+            $this->update("account", array(
+                                        'name' => $name,
+                                        'email' => $email,
+                                        'gender' => $gender,
+                                        'birthday' => $birthday),"email = '$email1'");
+        
+            echo "Đăng ký thành công. <a href='?link=home'>Về trang chủ</a>";
+        }
+        catch(Exception $e){
+            echo "Lỗi đăng ký. Vui lòng nhập lại.";
+        }
+
     }
 }
 ?>

@@ -19,11 +19,17 @@ class ViewController extends Controller{
     public function getRegister(){
         getView("register", array('title' => 'Đăng ký'));
     }
-
+    public function getRepair(){
+        getView("repair", array('title' => 'sửa',
+                                'id' => $this->accObj->checkLoggedIn()));
+    }
     public function getPosts(){
         getView("posts", array('title' => "Tin báo"));
     }
-
+    public function getUser(){
+        getView("user", array('title' => "Thông tin cá nhân",
+                            'id' => $this->accObj->checkLoggedIn()));
+    }
     public function getLogin(){
         getView("login", array('title' => 'Đăng nhập'));
     }

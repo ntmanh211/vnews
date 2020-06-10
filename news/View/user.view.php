@@ -1,6 +1,16 @@
 <?php if(!defined('__CONTROLLER__')) return; ?>
 <?php getTemplate("header", $viewParams); ?>
-
+<?php
+$link = mysqli_connect('localhost', 'root', '', 'recommend_news');
+mysqli_set_charset($link, "utf8");
+$email = $_SESSION['email'];
+$sql = "SELECT * FROM `account` WHERE email = '$email'";
+    $result = mysqli_query($link, $sql);
+    if(!$result) {
+        $kq =  " không có thông tin người dùng";
+    }
+  $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+?>
 <body class="bg-gradient-primary">
 
   <div class="container" style="width: 555px;">
@@ -17,32 +27,18 @@
               <div class="text-center">
                 <h1 class="h4 text-gray-900 mb-4">Thông tin cá nhân</h1>
               </div>
-              <form class="user" method="POST" action="?action=register">
-                <table>
-                  <thead>
-                      <tr>
-                          <th>Email</th>
-                          <th>Họ tên</th>
-                          <th>Ngày Sinh</th>
-                          <th>Giới tính</th>
-                          <th>Quan tâm</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <?php while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) : ?>
-                          <tr>
-                            <td><?php echo $row['email']; ?></td>
-                            <td><?php echo $row['name']; ?></td>
-                            <td><?php echo $row['birthday']; ?></td>
-                            <td><?php echo $row['gender']; ?></td>
-                            <td><?php echo $row['care']; ?></td>
-                          </tr>
-                      <?php endwhile; ?>
-                  </tbody>
-              </table>
-                <button type="submit" class="btn btn-primary btn-user btn-block">
+              <div>
+                <p>Name: <?php echo $row['name']; ?></p>
+                <p>Birthday: <?php echo $row['birthday']; ?></p>
+                <p>Email: <?php echo $row['email']; ?></p>
+                <p>Gender: <?php echo $row['gender']; ?></p>
+                <p>Role: <?php echo $row['role']; ?></p>
+                <a href="?link=repair"><button type="submit" class="btn btn-primary btn-user btn-block">
                   Chỉnh sửa
-                </button>
+                </button></a>
+                
+              </div>
+                
               </form>
             </div>
           </div>

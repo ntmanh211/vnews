@@ -1,5 +1,4 @@
-
-<div id="preloader">
+div id="preloader">
   <div id="status">&nbsp;</div>
 </div>
 <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
@@ -36,7 +35,7 @@
         else{ ?>  
           <div class="logged show open">
             <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                 <i class="fas fa-user"></i>
               </button>
             <div class="user-board bm-dropdown-menu user-board dropdown-menu" aria-labelledby = "dropdownMenuButton-2">
@@ -47,7 +46,7 @@
                 <li class="login">
                   <a href="?link=login" class="dropdown-item"> <span>Đăng nhập</span></a> -->
                 <li class="infomation">
-                  <a href="#"><span>Thông tin cá nhân</span></a>
+                  <a href="?link=user" ><span>Thông tin cá nhân</span></a>
                 </li>
                 <li class="logout">
                   <a href="?action=logoutact"><span>Đăng xuất</span></a>
