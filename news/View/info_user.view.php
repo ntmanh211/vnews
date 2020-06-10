@@ -18,48 +18,28 @@
                 <h1 class="h4 text-gray-900 mb-4">Thông tin cá nhân</h1>
               </div>
               <form class="user" method="POST" action="?action=register">
-                <div class="form-group">
-                  <input type="email" class="form-control form-control-user" id="exampleInputEmail" name="email" placeholder="Email">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-user" id="exampleInputName" name="name" placeholder="Họ tên">
-                </div>
-                <div class="form-group">
-                  <input type="birthday" class="form-control form-control-user" id="exampleInputBirthday" name="birthday" placeholder="Ngày sinh">
-                </div>
-                <div class="form-group">
-                    <label>Giới tính:</label>
-                    <label class="gender">Nam
-                        <input type="radio" checked="checked" name="gender">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="gender">Nữ
-                        <input type="radio" name="gender">
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                <div class="form-group">
-                  <label>Quan tâm:</label>
-                  <!-- <input type="care" class="form-control form-control-user" id="exampleInputCare" placeholder="Quan tâm"> -->
-                  
-                <div class="row">
-                  
-                  <div class="category col-lg-6">
-                    <label><input type="checkbox" name="care[]" value="1">Chính trị - Xã hội</label>
-                    <label><input type="checkbox" name="care[]" value="1">Đời sống</label>
-                    <label><input type="checkbox" name="care[]" value="1">Giáo dục</label>
-                    <label><input type="checkbox" name="care[]" value="1">Kinh doanh</label>
-                    <label><input type="checkbox" name="care[]" value="1">Khoa học công nghệ</label>
-                  </div>
-                  <div class="category col-lg-6">
-                    <label><input type="checkbox" name="care[]" value="1">Pháp luật</label>
-                    <label><input type="checkbox" name="care[]" value="1">Sức khỏe</label>
-                    <label><input type="checkbox" name="care[]" value="1">Thể thao</label>
-                    <label><input type="checkbox" name="care[]" value="1">Văn hóa</label>
-                    <label><input type="checkbox" name="care[]" value="1">Xe cộ</label>
-                  </div>
-                  
-                </div>
+                <table>
+                  <thead>
+                      <tr>
+                          <th>Email</th>
+                          <th>Họ tên</th>
+                          <th>Ngày Sinh</th>
+                          <th>Giới tính</th>
+                          <th>Quan tâm</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <?php while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) : ?>
+                          <tr>
+                            <td><?php echo $row['email']; ?></td>
+                            <td><?php echo $row['name']; ?></td>
+                            <td><?php echo $row['birthday']; ?></td>
+                            <td><?php echo $row['gender']; ?></td>
+                            <td><?php echo $row['care']; ?></td>
+                          </tr>
+                      <?php endwhile; ?>
+                  </tbody>
+              </table>
                 <button type="submit" class="btn btn-primary btn-user btn-block">
                   Chỉnh sửa
                 </button>

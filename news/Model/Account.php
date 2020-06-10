@@ -64,8 +64,7 @@ class Account extends DB{
                                         'email' => $email,
                                         'password' => _hash($password),
                                         'gender' => $gender,
-                                        'birthday' => $birthday,
-                                        'care' => $care));
+                                        'birthday' => $birthday));
         
             echo "Đăng ký thành công. <a href='?link=home'>Về trang chủ</a>";
         }
